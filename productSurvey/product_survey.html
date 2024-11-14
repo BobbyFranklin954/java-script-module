@@ -8,24 +8,37 @@
 <body>
   <h1>Welcome to Luxury Brand Products Feedback</h1>
   <h2>Provide Your Feedback</h2>
+
   <label for="name">Name:</label><br />
   <input type="text" id="name" placeholder="Your Name" required /><br />
+
   <label for="age">Age:</label><br />
   <input type="number" id="age" placeholder="Your Age" required min="18" /><br />
+
   <label for="email">Email:</label><br />
   <input type="email" id="email" placeholder="Your Email" required /><br />
+
   <label for="job">Job:</label><br />
   <input type="text" id="job" placeholder="Your Job" required /><br />
+
   <label for="designation">Designation:</label><br />
   <input type="text" id="designation" placeholder="Your Designation" required /><br />
+
   <label for="productType">Product Type:</label><br />
   <select id="productType" required>
     <option value="perfume">Perfume</option>
     <option value="cream">Cream</option>
     <option value="oils">Oils</option>
-  </select><br />
+  </select><br /><br>
+
   <label for="feedbackText">Feedback:</label><br />
-  <textarea id="feedbackText" rows="5" cols="30" placeholder="Enter your feedback here" required></textarea><br />
+  <textarea id="feedbackText" rows="5" cols="30" placeholder="Enter your feedback here" required></textarea><br /><br>
+
+  <label for="userExperienceText">User Experience: Optional: Please provide additional detail about your experience
+    using the
+    product.</label><br />
+  <textarea id="userExperienceText" rows="5" cols="77" placeholder=""></textarea><br /><br>
+
   <button id="submitBtn">Submit Feedback</button>
   <hr />
   <div id="userInfo" style="display: none">
@@ -38,6 +51,10 @@
     <p>
       Feedback for <span id="userProductChoice"></span>:
       <span id="userFeedback"></span>
+    </p>
+    <p>
+      User's experience:
+      <span id="userExperience"></span>
     </p>
   </div>
   <script src="./product_survey.js"></script>
